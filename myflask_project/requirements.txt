@@ -3,3 +3,4 @@ flask-pymongo
 flask-jwt-extended
 pymongo
 dnspython
+gunicorn
