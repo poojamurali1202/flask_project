@@ -19,6 +19,10 @@ app.config["JWT_REFRESH_TOKEN_EXPIRES"] = timedelta(days=30)
 
 jwt = JWTManager(app)
 
+@app.route('/')
+def home():
+    return jsonify({"message": "Flask API is running!"})
+
 # User Registration
 @app.route('/register', methods=['POST'])
 def register():
